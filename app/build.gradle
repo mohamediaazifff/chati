@@ -1,0 +1,100 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+
+}
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.mohameddev.yo"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        proguardFiles
+    }
+
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            debuggable true
+            jniDebuggable true
+            renderscriptDebuggable true
+            multiDexEnabled true
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    namespace 'com.mohameddev.yo'
+    dependenciesInfo {
+        includeInApk false
+    }
+    buildToolsVersion '33.0.0'
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+ //   implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'com.google.firebase:firebase-database:20.1.0'
+    implementation 'com.google.firebase:firebase-storage:20.1.0'
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+
+    //add these libraries
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.google.firebase:firebase-firestore:24.4.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+    implementation platform('com.google.firebase:firebase-bom:31.1.0')
+
+    // Add the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-auth'
+
+    // Also add the dependency for the Google Play services library and specify its version
+    implementation 'com.google.android.gms:play-services-auth:20.4.0'
+    // mult dex lib
+    def multidex_version = "2.0.1"
+    implementation "androidx.multidex:multidex:$multidex_version"
+
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+
+ //   implementation 'io.agora.rtc:full-sdk:4.1.0'
+
+
+    implementation 'com.nabinbhandari.android:permissions:3.8'
+
+    implementation 'live.videosdk:rtc-android-sdk:0.1.9'
+
+    // library to perform Network call to generate a meeting id
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+
+
+
+        implementation 'com.github.agoraio-community:videouikit-android:final:4.0.1'
+
+
+}

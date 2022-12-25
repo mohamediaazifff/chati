@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Ui.ForgotPass">
+
+    <include
+        android:id="@+id/navbar"
+        layout="@layout/navbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/navbar"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text=" لا تقلق,  سنقوم بحل مشكلك."
+            android:textColor="#888"
+            android:textSize="20sp"
+            android:layout_marginBottom="50dp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:text="ادخل البريد الالكتروني الخاص بك سيصلك رابط لاعادة تعيين كلمة السر ."
+            android:textColor="#888"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint=" البريد الالكتروني .."
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textColorHint="#aaa"
+            android:textSize="20sp"
+            app:met_floatingLabel="normal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_get_new_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:shadowColor="#00aacc"
+            android:shadowDx="0"
+            android:shadowDy="3"
+            android:shadowRadius="7"
+            android:text="ارسل رابط اعادة التعيين"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:backgroundTint="@color/colorPrimary" />
+
+
+        <TextView
+            android:id="@+id/text_singup_forget_pss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_get_new_pass"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:text="التسجيل "
+            android:textColor="#888"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif" />
+
+        <TextView
+            android:id="@+id/txt_login_forget_pss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_singup_forget_pss"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:text="الدخول"
+            android:textColor="#888"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif" />
+    </LinearLayout>
+</RelativeLayout>

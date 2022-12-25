@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Ui.LoginActivity">
+    <include
+        android:id="@+id/navbar"
+        layout="@layout/navbar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/navbar"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:text=" تسجيل الدخول"
+            android:textColor="#888"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+            android:hint="البريد الالكتروني"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textColorHint="#aaa"
+            android:textSize="20sp"
+            app:met_floatingLabel="normal" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="end"
+            android:hint="كلمة المرور"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textColorHint="#aaa"
+            android:textSize="20sp"
+            app:met_floatingLabel="normal" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:id="@+id/txt_fo_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="نسيت كلمة السر ؟"
+            android:textColor="#888"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:rippleColor="@color/colorPrimary"
+            app:fontFamily="sans-serif"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bnt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:shadowColor="#00aacc"
+            android:shadowDx="0"
+            android:shadowDy="3"
+            android:shadowRadius="7"
+            android:text="الدخول"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+
+            app:backgroundTint="@color/colorPrimary" />
+
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:id="@+id/txt_signup_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:text="مستخدم جديد؟ التسجيل"
+            android:textColor="#888"
+            android:textSize="20sp"
+            app:rippleColor="@color/colorPrimary"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif" />
+    </LinearLayout>
+</RelativeLayout>

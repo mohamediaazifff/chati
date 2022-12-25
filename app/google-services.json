@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "427966123468",
+    "project_id": "chating-6fa18",
+    "storage_bucket": "chating-6fa18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427966123468:android:980a4ca804efb79d752169",
+        "android_client_info": {
+          "package_name": "com.mohameddev.yo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427966123468-bslccg1prng230be4qg6g79qpgqt3ll2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mohameddev.yo",
+            "certificate_hash": "6e32a9a846a73fe2bfe87295a38a1b48230333cf"
+          }
+        },
+        {
+          "client_id": "427966123468-qa7fhe6ehk6bv16mr1vaojpl4ek5gjqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA91AdyFqn0BIpHxdAAX4ppT3MMYjo2bU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427966123468-qa7fhe6ehk6bv16mr1vaojpl4ek5gjqp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
